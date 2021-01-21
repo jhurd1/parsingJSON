@@ -23,6 +23,12 @@ public class Player
         this.gold = gold;
     }
 
+    public Player getPlayer()
+    {
+        Player p = new Player(name, health, mana, gold);
+        return p;
+    }
+
     public String getName()
     {
         return name;
@@ -63,11 +69,4 @@ public class Player
     {
         System.out.print (name + " " + health + " " + mana + " " + gold);
     }
-
-    /*private void test()
-    {
-        Player p = new Player(name,health,mana,gold);
-        Gson gson = new Gson();
-        String json = gson.toJson(p);
-    }*/
 }

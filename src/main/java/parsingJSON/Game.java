@@ -3,14 +3,18 @@ package parsingJSON;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import java.io.File;
 import java.io.FileWriter;
+import java.io.IOException;
 
 public class Game
 {
-    private int gameGold;
-    private int gameMana;
-    private String gameName;
-    private int gameHealth;
+    private static int gameGold;
+    private static int gameMana;
+    private static String gameName;
+    private static int gameHealth;
+    private String fileName = "";
+    Player p = new Player(gameName,gameHealth,gameMana,gameGold);
 
     public Game(Player p)
     {
@@ -20,10 +24,25 @@ public class Game
         gameHealth = p.getHealth();
     }
 
-    private void saveGame()
+    private String saveGame()
     {
-        Player p = new Player(gameName,gameHealth,gameMana,gameGold);
+        fileName = "/Users/jamiehurd/desktop/byui/cs_246/cs246/parsingJSON/src/main/java/parsingJSON/parse.txt";
         Gson gson = new Gson();
-        String json = gson.toJson(p, new FileWriter("/Users/jamiehurd/desktop/byui/cs_246/cs246/parsingJSON/src/main/java/parsingJSON"));
+        try
+        {
+            gson.toJson(p, new FileWriter(fileName));
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+        return fileName;
+    }
+
+    public static Game loadGame(String fileName)
+    {
+        //Player pTest = new ObjectWrapper().readValue(fileName, Player.class);
+        Player p = new Player(gameName,gameHealth,gameMana,gameGold);
+        Game g = new Game(p.getPlayer());
+        return g;
     }
 }
