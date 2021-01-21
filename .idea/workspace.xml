@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d97e0b96-22b4-4316-af95-d07003ecc8ba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/parsingJSON/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parsingJSON/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parsingJSON/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parsingJSON/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/parsingJSON/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parsingJSON/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,5 +86,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/parsingJSON/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/parsingJSON/Game.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

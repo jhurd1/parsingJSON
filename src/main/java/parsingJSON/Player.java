@@ -10,10 +10,10 @@ public class Player
     private int mana = 1;
     private int gold = 2;
 
-    Player()
+    /*Player()
     {
 
-    }
+    }*/
 
     Player(String name, int health, int mana, int gold)
     {
