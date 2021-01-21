@@ -14,10 +14,10 @@ import java.nio.file.Paths;
 
 public class Game
 {
-    /*private static int gameGold;
+    private static int gameGold;
     private static int gameMana;
     private static String gameName;
-    private static int gameHealth;*/
+    private static int gameHealth;
     //private String fileName = "";
     //Player p = new Player(gameName,gameHealth,gameMana,gameGold);
     Player p;
@@ -25,10 +25,6 @@ public class Game
     public Game(Player player)
     {
         p = player; // constructs thd game class with this alone
-        /*gameGold = p.getGold();
-        gameMana = p.getMana();
-        gameName = p.getName();
-        gameHealth = p.getHealth();*/
     }
 
     public String saveGame(String fileName)
@@ -48,18 +44,22 @@ public class Game
         return fileName;
     }
 
-  /*  public static Game loadGame(String fileName)
+    public static Game loadGame(String fileName)
     {
-        Player p = new Player("");
+        // String name, int health, int mana, int gold
+        Player p2 = new Player(gameName, gameHealth, gameMana, gameGold);
+        Game secondGame = new Game(p2);
         try
         {
-            Reader reader = Files.newBufferedReader(Paths.get(fileName));
+            Reader reader = Files.newBufferedReader(Paths.get("test.txt"));
             Gson gson = new Gson();
-            p = gson.fromJson(reader, Player.class);
-            Game g = new Game(p.getPlayer());
+            p2 = gson.fromJson(reader, Player.class);
+            //Game g = new Game(p2.getPlayer());
+            reader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return new Game(p);
-    }*/
+        //return new Game(p2);
+        return secondGame;
+    }
 }

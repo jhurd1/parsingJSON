@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/parsingJSON/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parsingJSON/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/parsingJSON/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parsingJSON/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parsingJSON/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parsingJSON/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,14 +90,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/parsingJSON/Main.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/main/java/parsingJSON/Game.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/parsingJSON/Game.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="2" />
+          <line>62</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
